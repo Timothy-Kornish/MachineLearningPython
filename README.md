@@ -16,4 +16,4 @@ Copy/paste this URL into your browser when you connect for the first time,
 
 the token will change each time, after first login it, token becomes irrelevant.
 
-can just type localhost:8888
+can just type localhost:8888 in the web browser after notebook is initialized from command line.
