@@ -4,10 +4,11 @@
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
--- setting up Anaconda:
+-- setting up Anaconda and python:
 --------------------------------------------------------------------------------
 
 ubuntu@ip-172-31-21-42:~$ wget http://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh
+ubuntu@ip-172-31-21-42:~$ bash Anaconda3-4.1.1-Linux-x86_64.sh
 
 --------------------------------------------------------------------------------
 -- Use Anaconda3 python:
@@ -46,7 +47,7 @@ Country Name (2 letter code) [AU]: US...
 -- Setting up congfig file
 --------------------------------------------------------------------------------
 
-ubuntu@ip-172-31-21-42:~$ ~/.jupyter/
+ubuntu@ip-172-31-21-42:~/certs$ cd ~/.jupyter/
 ubuntu@ip-172-31-21-42:~/.jupyter$ vi jupyter_notebook_config.py
 
 - this opens up visual editor
@@ -84,31 +85,31 @@ ubuntu@ip-172-31-21-42:~/.jupyter$ sudo apt-get update
 
 1) install java
 
-ubuntu@ip-172-31-21-42:~/.jupyter$ sudo apt-get install default-jre
+ubuntu@ip-172-31-21-42:~$ sudo apt-get install default-jre
 
 -check it worked
 
-ubuntu@ip-172-31-21-42:~/.jupyter$ java -version
+ubuntu@ip-172-31-21-42:~$ java -version
 openjdk version "1.8.0_151"
 OpenJDK Runtime Environment (build 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12)
 OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
 
 2) install Scala
 
-ubuntu@ip-172-31-21-42:~/.jupyter$ sudo apt-get install scala
+ubuntu@ip-172-31-21-42:~$ sudo apt-get install scala
 
 -check it worked
 
-ubuntu@ip-172-31-21-42:~/.jupyter$ scala -version
+ubuntu@ip-172-31-21-42:~$ scala -version
 Scala code runner version 2.11.6 -- Copyright 2002-2013, LAMP/EPFL
 
 3) install Spark with hadoop
 
 -install library py4j to connect python to java, to do this we must connect pip to Anaconda
 
-ubuntu@ip-172-31-21-42:~/.jupyter$ export PATH=$PATH:$HOME/anaconda3/bin
-ubuntu@ip-172-31-21-42:~/.jupyter$ conda install pip
-ubuntu@ip-172-31-21-42:~/.jupyter$ pip install py4j
+ubuntu@ip-172-31-21-42:~$ export PATH=$PATH:$HOME/anaconda3/bin
+ubuntu@ip-172-31-21-42:~$ conda install pip
+ubuntu@ip-172-31-21-42:~$ pip install py4j
 
 - notice the directory change
 
